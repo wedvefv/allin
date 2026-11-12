@@ -2,7 +2,7 @@
 实时抓取大神的开单走向
 
 ## 安装包
-release目录下
+allin-1.0.0-arm64.apk
 
 ## 主界面
 <img width="560" height="1245" alt="shot18" src="https://github.com/user-attachments/assets/0f78a1d7-69cc-42fd-9254-2eaf9cc493ba" />
