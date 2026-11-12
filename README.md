@@ -6,6 +6,8 @@
 allin-1.0.0-arm64.apk
 
 ## 主界面
+<img width="1220" height="2712" alt="image" src="https://github.com/user-attachments/assets/68cef291-6679-4759-addf-2a1b4bcd1418" />
+
 <img width="560" height="1245" alt="shot18" src="https://github.com/user-attachments/assets/0f78a1d7-69cc-42fd-9254-2eaf9cc493ba" />
 
 ## 邮件提醒设置
