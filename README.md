@@ -13,6 +13,13 @@ allin-1.0.0-arm64.apk 只支持熬鹰资本监控
 
 <img width="560" height="1245" alt="shot18" src="https://github.com/user-attachments/assets/0f78a1d7-69cc-42fd-9254-2eaf9cc493ba" />
 
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/6afb7a94-0e48-4095-ba01-c46a42a569ec" />
+
+<img width="871" height="1937" alt="image" src="https://github.com/user-attachments/assets/525fed20-d947-4122-8c86-69a95e168598" />
+
+<img width="1220" height="2712" alt="image" src="https://github.com/user-attachments/assets/5e117d83-fe2e-4e00-b41d-0978ab2a5bba" />
+
+
 ## 邮件提醒设置
 右上角设置中设置自己的邮件，发件人写自己+授权码（类似密码），接受邮箱也写自己
 
