@@ -1,46 +1,93 @@
-# 描述
-- 熬鹰虽然开单人员满了，但是开单记录还能看，也算给我们一个方向，希望能帮助到大家。
-- 此app旨在帮助看不懂趋势的小白做一个参考，切记**止损-止损-止损**
+# Allin · 带单监控
 
+一个给「看不懂趋势的小白」做参考的工具：实时跟踪指定交易员的带单动作，统计历史交割单盈亏，并对单笔仓位做 AI 复盘。
+
+> 熬鹰虽然开单人员满了，但是开单记录还能看，也算给我们一个方向，希望能帮助到大家。
+
+切记 **止损 - 止损 - 止损**。
 
 ## 安装包
-allin-1.0.0-arm64.apk 只支持熬鹰资本监控
 
-**allin-1.1.0-arm64.apk 支持自定义跟踪喜欢的交易员**
+| 文件 | 说明 |
+| --- | --- |
+| allin-1.0.0-arm64.apk | 只支持熬鹰资本监控 |
+| allin-1.1.0-arm64.apk | 支持自定义跟踪喜欢的交易员 |
 
-## 主界面
-<img width="1220" height="2712" alt="image" src="https://github.com/user-attachments/assets/68cef291-6679-4759-addf-2a1b4bcd1418" />
+> 目前仅提供 arm64 架构安装包。
 
-<img width="560" height="1245" alt="shot18" src="https://github.com/user-attachments/assets/0f78a1d7-69cc-42fd-9254-2eaf9cc493ba" />
+## 功能
 
-<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/6afb7a94-0e48-4095-ba01-c46a42a569ec" />
+### 1. 带单监控
 
-<img width="871" height="1937" alt="image" src="https://github.com/user-attachments/assets/525fed20-d947-4122-8c86-69a95e168598" />
+- 同时监控多位交易员，可按「全部 / 单个交易员」筛选
+- 汇总展示今日已实现盈亏、持仓笔数、最近一次开（加）仓动作
+- 默认轮询间隔 5s，右上角可手动刷新
+- 右下角「添加交易员」可按 UID 自定义跟踪对象（1.1.0 及以上）
 
-<img width="1220" height="2712" alt="image" src="https://github.com/user-attachments/assets/5e117d83-fe2e-4e00-b41d-0978ab2a5bba" />
+<img width="360" alt="带单监控" src="https://github.com/user-attachments/assets/68cef291-6679-4759-addf-2a1b4bcd1418" />
 
+### 2. 交易员详情与带单记录
+
+- 顶部显示监控状态、最近一次同步成功时间
+- 当前持仓卡片：币种、方向、开仓均价与数量
+- 「动作提醒」与「带单记录」两个视图，记录按时间倒序排列，显示开/加/平仓、均价、数量；平仓单同时标出盈亏
+
+<img width="360" alt="交易员详情" src="https://github.com/user-attachments/assets/0f78a1d7-69cc-42fd-9254-2eaf9cc493ba" />
+
+### 3. 交割单分析
+
+- 汇总全部历史仓位：仓位总数、盈利 / 亏损笔数、累计盈亏
+- 左右分栏分别列出「盈利仓位」「亏损仓位」，每张卡片含币种、方向、杠杆、开平仓时间、盈亏与收益率
+- 数据源可切换「在线同步」或「本地文件」；断网时可查看离线缓存，需要最新数据时点右上角刷新
+
+<img width="360" alt="交割单分析" src="https://github.com/user-attachments/assets/6afb7a94-0e48-4095-ba01-c46a42a569ec" />
+
+### 4. 仓位详情
+
+- K 线图支持 1m / 5m / 15m / 1h 切换，自动标注开仓、平仓均价线，并显示成交量
+- 指标卡展示盈亏、收益率、持仓时长、开平仓价、数量、最大持仓与保证金模式（全仓 / 逐仓）
+
+<img width="360" alt="仓位详情" src="https://github.com/user-attachments/assets/525fed20-d947-4122-8c86-69a95e168598" />
+
+### 5. AI 单笔复盘
+
+- 点击仓位详情右上角 ✨ 进入 AI 分析
+- AI 只读取这一笔单子的数据，不会联网查行情；进场点位主要靠开平仓价与持仓时长推断
+- 可直接提问，也可点选预设问题：进场点位好不好 / 持仓时间是否合理 / 止损该怎么放 / 下次同类机会怎么做
+
+<img width="360" alt="AI 分析" src="https://github.com/user-attachments/assets/5e117d83-fe2e-4e00-b41d-0978ab2a5bba" />
 
 ## 邮件提醒设置
-右上角设置中设置自己的邮件，发件人写自己+授权码（类似密码），接受邮箱也写自己
 
-qq邮箱需要在网页版获取授权码，步骤如下图，当然你也可以不设置邮箱，安卓推送有时会被系统接管导致不提醒。
+右上角设置中填写自己的邮箱：发件人写自己 + 授权码（授权码类似密码），接收邮箱也写自己。
 
-<img width="1918" height="311" alt="image" src="https://github.com/user-attachments/assets/64bbf11f-0881-4019-ad68-25eccadf80d0" />
+QQ 邮箱需要在网页版获取授权码，步骤如下图。当然也可以不设置邮箱，但安卓推送有时会被系统接管，导致不提醒。
 
-<img width="1903" height="173" alt="image" src="https://github.com/user-attachments/assets/88680e89-aa59-45d5-a5b4-4be416b9120a" />
+<img width="900" alt="进入邮箱设置" src="https://github.com/user-attachments/assets/64bbf11f-0881-4019-ad68-25eccadf80d0" />
 
-<img width="1365" height="736" alt="image" src="https://github.com/user-attachments/assets/0a9540f1-b6bb-4f2c-af19-c80dc2517775" />
+<img width="900" alt="账号与安全" src="https://github.com/user-attachments/assets/88680e89-aa59-45d5-a5b4-4be416b9120a" />
 
+<img width="900" alt="生成授权码" src="https://github.com/user-attachments/assets/0a9540f1-b6bb-4f2c-af19-c80dc2517775" />
 
 ## 重要事情说三遍
-要在通知里开启支持后台运行，电池里面支持无限制，具体型号自行用deepseek查询，目的是让应用后台运行不被节能等系统操作杀死。
+
+要在通知里开启「支持后台运行」，电池里设置为「无限制」，具体型号自行用 DeepSeek 查询。目的是让应用在后台运行，不被系统省电策略杀死。
 
 ## 支付
-默认支持7天试用，激活码50u， 币安app直接支付，通过uid联系我，我会发送激活码
-<img width="1053" height="1560" alt="image" src="https://github.com/user-attachments/assets/54d24cc9-be85-4f1a-8475-5a74e0188a45" />
+
+默认支持 7 天试用，激活码 50u。币安 App 直接支付，通过 UID 联系我，我会发送激活码。
+
+<img width="360" alt="币安支付" src="https://github.com/user-attachments/assets/54d24cc9-be85-4f1a-8475-5a74e0188a45" />
 
 ## 激活码
-<img width="1220" height="2712" alt="image" src="https://github.com/user-attachments/assets/e0ce6f7f-8dec-4382-bfa1-b371e94a8d16" />
+
+- 激活码 6 位，形如 `ABC-DEF`，字母不区分大小写
+- 首次激活需要联网一次，之后完全离线可用
+- 激活后绑定本机，卸载重装不影响；换手机请联系作者重置
+- 没有激活码请向作者购买
+
+<img width="360" alt="激活" src="https://github.com/user-attachments/assets/e0ce6f7f-8dec-4382-bfa1-b371e94a8d16" />
 
 # 提醒
+
 大神开单只是方向，也不是全对，自己要设置止损位，避免爆仓。
