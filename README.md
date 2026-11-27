@@ -75,7 +75,7 @@ QQ 邮箱需要在网页版获取授权码，步骤如下图。当然也可以�
 
 ## 支付
 
-默认支持 7 天试用，激活码 50u。币安 App 直接支付，通过 UID 联系我，我会发送激活码。
+默认支持 7 天试用，激活码 9.9u。币安 App 直接支付，通过 UID 联系我，我会发送激活码。
 
 <img width="360" alt="币安支付" src="https://github.com/user-attachments/assets/54d24cc9-be85-4f1a-8475-5a74e0188a45" />
 
